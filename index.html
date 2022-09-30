@@ -1,12 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nicolas Ribeiro | Portfolio</title>
+
+    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
-    <h1>alo</h1>
+    <main id="container">
+        <aside id="bio-container">
+            <h2>&lt;Nicolas Ribeiro/&gt;</h2>
+            <img id="bio-image" src="images/profile.jpg" alt="Nicolas Ribeiro">
+            <p>Olá, meu nome é Nicolas Ribeiro e sou <span class="highlight">Desenvolvedor Front-End Junior</span></p>
+            <p id="welcome-text">Seja bem-vindo</p>
+            <ul id="social-container">
+                <li><a href="https://www.linkedin.com/in/nicolas-ribeiro/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://github.com/ribeironicolas" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/ribeiro.nicolass/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+            <div id="email-container">
+                <ion-icon name="mail-outline"></ion-icon><a href="mailto:nicolasribeiro.contato@gmail.com">nicolasribeiro.contato@gmail.com</a>
+            </div>
+        </aside>
+
+        <section id="about-container">
+            <h1 id="name">Nicolas Ribeiro</h1>
+            <p id="title"><span class="highlight">Desenvolvedor Front-End</span></p>
+            <p class="description">Desenvolvedor Front-end Junior em formação, <span class="highlight">cursando o 3º semestre de Analise e Desenvolvimento de Sistemas</span>, além de cursos e projetos para a web.</p>
+            <p class="description">Atualmente estudando <span class="highlight">JavaScript</span> e realizando <span class="highlight">projetos didáticos e pessoais</span> para me <span class="highlight"></span>aprofundar na linguagem, e então futuramente começar a usar seus frameworks, sempre dando um passo de cada vez e <span class="highlight">buscando contaste evolução e aprendizado.</span></p>
+            <a href="assets/Nicolas Ribeiro.pdf" id="btn-curriculum" download><ion-icon name="document-attach-outline"></ion-icon><span>Baixar Currículo</span></a>
+            <h2 id="skills-section-title">Minhas Skills</h2>
+            <p class="description">Linguagens e tecnologias que domino ou estou estudando</p>
+            <div id="skills-container">
+                <div class="skills-box">
+                    <p class="skills-title">Front-end</p>
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Back-end</p>
+                    <i class="devicon-java-plain colored"></i>
+                    <i class="devicon-php-plain colored"></i>
+                    <i class="devicon-python-plain colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Databases</p>
+                    <i class="devicon-mysql-plain colored"></i>
+                </div>
+                <div class="skills-box">
+                    <p class="skills-title">Outros</p>
+                    <i class="devicon-bootstrap-plain colored"></i>
+                    <i class="devicon-react-plain colored"></i>
+                    <i class="devicon-sass-plain colored"></i>
+                    <i class="devicon-jquery-plain colored"></i>
+                    <i class="devicon-git-plain colored"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+          
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
