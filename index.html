@@ -1,73 +1,200 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolas Ribeiro | Portfolio</title>
+    <title>Nicolas Ribeiro</title>
 
     <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script defer src="js/owl/jquery.min.js"></script>
+    <script defer src="js/owl/owl.carousel.min.js"></script>
+    <script defer src="js/owl/setup.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
 <body>
-    <main id="container">
-        <aside id="bio-container">
-            <h2>&lt;Nicolas Ribeiro/&gt;</h2>
-            <img id="bio-image" src="images/profile.jpg" alt="Nicolas Ribeiro">
-            <p>Olá, meu nome é Nicolas Ribeiro e sou <span class="highlight">Desenvolvedor Front-End Junior</span></p>
-            <p id="welcome-text">Seja bem-vindo</p>
-            <ul id="social-container">
-                <li><a href="https://www.linkedin.com/in/nicolas-ribeiro/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://github.com/ribeironicolas" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-                <li><a href="https://www.instagram.com/ribeiro.nicolass/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+    <header>
+        <img src="images/logo.svg" id="logo" width="200px" alt="logo">
+        <nav>
+            <ul>
+                <li><a id="about-me-txt" href="#about-me">Sobre mim</a></li>
+                <li><a id="my-skills-txt" href="#skills">Minhas Habilidades</a></li>
+                <li><a id="projects-txt" href="#projects">Projetos</a></li>
+                <li>
+                    <div>
+                        <input type="checkbox" id="change-language">
+                        <label for="change-language">
+                            <img id="brazil-flag" src="images/brazil.png">
+                            <img id="eua-flag" src="images/eua.png">
+                        </label>
+                    </div>
+                </li>
             </ul>
-            <div id="email-container">
-                <ion-icon name="mail-outline"></ion-icon><a href="mailto:nicolasribeiro.contato@gmail.com">nicolasribeiro.contato@gmail.com</a>
-            </div>
-        </aside>
-
-        <section id="about-container">
-            <h1 id="name">Nicolas Ribeiro</h1>
-            <p id="title"><span class="highlight">Desenvolvedor Front-End</span></p>
-            <p class="description">Desenvolvedor Front-end Junior em formação, <span class="highlight">cursando o 3º semestre de Analise e Desenvolvimento de Sistemas</span>, além de cursos e projetos para a web.</p>
-            <p class="description">Atualmente estudando <span class="highlight">JavaScript</span> e realizando <span class="highlight">projetos didáticos e pessoais</span> para me <span class="highlight"></span>aprofundar na linguagem, e então futuramente começar a usar seus frameworks, sempre dando um passo de cada vez e <span class="highlight">buscando contaste evolução e aprendizado.</span></p>
-            <a href="assets/Nicolas Ribeiro.pdf" id="btn-curriculum" download><ion-icon name="document-attach-outline"></ion-icon><span>Baixar Currículo</span></a>
-            <h2 id="skills-section-title">Minhas Skills</h2>
-            <p class="description">Linguagens e tecnologias que domino ou estou estudando</p>
-            <div id="skills-container">
-                <div class="skills-box">
-                    <p class="skills-title">Front-end</p>
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Back-end</p>
-                    <i class="devicon-java-plain colored"></i>
-                    <i class="devicon-php-plain colored"></i>
-                    <i class="devicon-python-plain colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Databases</p>
-                    <i class="devicon-mysql-plain colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Outros</p>
-                    <i class="devicon-bootstrap-plain colored"></i>
-                    <i class="devicon-react-plain colored"></i>
-                    <i class="devicon-sass-plain colored"></i>
-                    <i class="devicon-jquery-plain colored"></i>
-                    <i class="devicon-git-plain colored"></i>
-                </div>
-            </div>
-        </section>
+        </nav>
+    </header>
+    <main>
+        <span id="intro">
+            <h1 id="hello">Olá, eu sou Nicolas Ribeiro</h1>
+            <p id="position">Desenvolvedor Front-End & Ilustrador</p>
+            <a download href="assets/Nicolas Ribeiro.pdf"><button id="resume-btn">Currículo</button></a>
+        </span>
+        <span id="my-picture"><img src="images/nicolas.jpg" alt=""></span>
     </main>
-          
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <section id="about-me">
+        <h2 id="about-me-title">Sobre mim</h2>
+        <p id="info">Meu nome é Nicolas Ribeiro, moro em São Paulo. Estou cursando o 4° semestre de Análise e Desenvolvimento de Sistemas
+           na Universidade Cidade de São Paulo (UNICID), e foi nela que fiz minha primeira linha de código, desde então venho
+           me apaixonando e aprendendo cada vez mais na área, pretendo seguir com o desenvolvimento Front-End e realizar
+           uma faculdade de engenharia de software.
+        </p>
+        <div id="contact">
+            <ul>
+                <li>
+                    <a href="mailto:nicolasribeiro.contato@gmail.com"><img src="images/mail.svg" alt="mail icon"></a>
+                    <h3>E-mail</h3>
+                    <p>nicolasribeiro.contato@gmail.com</p>
+                </li>
+                <li>
+                    <a target="_blank" href="https://github.com/ribeironicolas"><img src="images/github.svg" alt="github icon"></a>
+                    <h3>GitHub</h3>
+                    <p>ribeironicolas</p>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/nicolas-ribeiro/"><img src="images/linkedin.svg" alt="linkedin icon"></a>
+                    <h3>Linkedin</h3>
+                    <p>nicolas ribeiro</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="skills">
+        <h2 id="skills-title">Minhas Hablidades</h2>
+            <div id="skills-box">
+                <i class="devicon-html5-plain"></i>
+                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-react-plain colored"></i>
+                <i class="devicon-bootstrap-plain colored"></i>
+                <i class="devicon-git-plain colored"></i>
+                <i class="devicon-typescript-plain colored"></i>
+                <i class="devicon-figma-plain colored"></i>
+                <i class="devicon-photoshop-plain colored"></i>
+                <i class="devicon-php-plain colored"></i>
+                <i></i>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2 id="projects-title">Projetos e Ilustrações</h2>
+        <div id="projects-carousel">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <a target="_blank" href="https://ribeironicolas.github.io/markdown-editor/">
+                        <img class="box-projects" src="images/thumbs/markdown-editor.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="https://ribeironicolas.github.io/HeYapp-ChatSite/">
+                        <img class="box-projects" src="images/thumbs/heyapp.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="https://ribeironicolas.github.io/github-api-app/">
+                        <img class="box-projects" src="images/thumbs/github-api-app.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="https://ribeironicolas.github.io/Mata-Mosquito/">
+                        <img class="box-projects" src="images/thumbs/mata-mosquito.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="https://ribeironicolas.github.io/Mario-Game">
+                        <img class="box-projects" src="images/thumbs/mario-run.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="https://ribeironicolas.github.io/Memory-Game">
+                        <img class="box-projects" src="images/thumbs/memory-game.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="https://ribeironicolas.github.io/Pokedex">
+                        <img class="box-projects" src="images/thumbs/pokedex.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="https://ribeironicolas.github.io/Spotify-Site-Clone">
+                        <img class="box-projects" src="images/thumbs/spotify-clone.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="https://ribeironicolas.github.io/Snake-Game">
+                        <img class="box-projects" src="images/thumbs/snake-game.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="illustrations-carousel">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <a target="_blank" href="images/ilustrations/1.png">
+                        <img class="box-ilustrations" src="images/ilustrations/1.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="images/ilustrations/2.png">
+                        <img class="box-ilustrations" src="images/ilustrations/2.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="images/ilustrations/3.png">
+                        <img class="box-ilustrations" src="images/ilustrations/3.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="images/ilustrations/4.png">
+                        <img class="box-ilustrations" src="images/ilustrations/4.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="images/ilustrations/5.png">
+                        <img class="box-ilustrations" src="images/ilustrations/5.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="images/ilustrations/6.png">
+                        <img class="box-ilustrations" src="images/ilustrations/6.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="images/ilustrations/7.png">
+                        <img class="box-ilustrations" src="images/ilustrations/7.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="images/ilustrations/8.png">
+                        <img class="box-ilustrations" src="images/ilustrations/8.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="images/ilustrations/9.png">
+                        <img class="box-ilustrations" src="images/ilustrations/9.png" alt="">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="images/ilustrations/10.png">
+                        <img class="box-ilustrations" src="images/ilustrations/10.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer><p id="footer-mention">Desenvolvido por <span class="highlight">Nicolas Ribeiro</span></p></footer>
 </body>
 </html>

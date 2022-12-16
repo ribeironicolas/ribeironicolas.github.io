@@ -1,0 +1,77 @@
+@media only screen and (max-width: 768px) {
+    main #intro h1 {
+        font-size: 2em;
+        width: 75%;
+        margin-bottom: 0.2em;
+    }
+    main #intro p {
+        font-size: 0.8em;
+    }
+    main #my-picture img {
+        width: 200px;
+    }
+    main #intro button {    
+        border-radius: 35px;
+        padding: 7px 15px;
+    }
+    #skills-box i {
+        font-size: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 452px) {
+    header #logo {
+        display: none;
+    }
+    nav {
+        margin: 0 auto;
+    }
+    nav ul li a {
+        font-size: 0.8em;
+    }
+    main #my-picture img {
+        display: none;
+    }
+    #about-me h2,
+    #skills h2,
+    #projects h2 {
+        font-size: 1.5em;
+    }
+    #contact ul li a img {
+        width: 20px;
+    }
+    #contact ul li h3 {
+        font-size: 0.8em;
+    }
+    #contact ul li p {
+        font-size: 0.5em;
+    }
+    #projects {
+        margin-top: 3em;
+    }
+    #skills-box i {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #about-me p {
+        font-size: 0.8em;
+    }
+    #contact ul {
+        flex-direction: column;
+    }
+    #contact p {
+        margin-bottom: 3em;
+    }
+    #contact ul li a,
+    #contact ul li a img {
+        display: none;
+    }
+    #skills-box i {
+        font-size: 2rem;
+    }
+    #projects {
+        margin-top: 1em;
+    }
+}
