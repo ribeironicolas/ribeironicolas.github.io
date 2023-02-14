@@ -11,6 +11,7 @@
     const hello = document.getElementById("hello")
     const position = document.getElementById("position")
     const resumeBtn = document.getElementById("resume-btn")
+    const resumeArchive = document.getElementById("archive")
     //about me
     const aboutMeTitle = document.getElementById("about-me-title")
     const info = document.getElementById("info")
@@ -22,6 +23,7 @@
     const footerMention = document.getElementById("footer-mention")
         
     function translateToEnglish() {
+        document.title = "Nicolas Ribeiro - EN"
         //header translate
         euaFlag.style.display = "none"
         brazilFlag.style.display = "block"
@@ -32,6 +34,7 @@
         hello.textContent = "Hi, I'm Nicolas Ribeiro"
         position.textContent = "Front-End Developer & Illustrator"
         resumeBtn.textContent = "Resumé"
+        resumeArchive.setAttribute("href", "../assets/Nicolas_Ribeiro_EN.pdf")
         //about me translate
         aboutMeTitle.textContent = "About me"
         info.textContent = "My name is Nicolas Ribeiro, I live in São Paulo. I'm studying the 4th semester of Systems Analysis and Development at Universidade Cidade de São Paulo (UNICID), and it was there that I made my first line of code, since then I've been falling in love and learning more and more in the area, I intend to continue with Front-End development and studying software engineering."
@@ -48,6 +51,7 @@
     }   
 
     function translateToPortuguese() {
+        document.title = "Nicolas Ribeiro - PT"
         //header translate
         euaFlag.style.display = "block"
         brazilFlag.style.display = "none"
@@ -58,6 +62,7 @@
         hello.textContent = "Olá, eu sou Nicolas Ribeiro"
         position.textContent = "Desenvolvedor Front-End & Ilustrador"
         resumeBtn.textContent = "Currículo"
+        resumeArchive.setAttribute("href", "../assets/Nicolas_Ribeiro.pdf")
         //about me translate
         aboutMeTitle.textContent = "Sobre mim"
         info.textContent = "Meu nome é Nicolas Ribeiro, moro em São Paulo. Estou cursando o 4° semestre de Análise e Desenvolvimento de Sistemas na Universidade Cidade de São Paulo (UNICID), e foi nela que fiz minha primeira linha de código, desde então venho me apaixonando e aprendendo cada vez mais na área, pretendo seguir com o desenvolvimento Front-End e realizar uma faculdade de engenharia de software."
