@@ -33,7 +33,7 @@
     //main translate
     hello.textContent = "Hi, I'm Nicolas Ribeiro";
     position.textContent = "Front-End Developer & Illustrator";
-    resumeBtn.textContent = "Resumé";
+    resumeBtn.textContent = "CV";
     resumeArchive.setAttribute("href", "../assets/Nicolas_Ribeiro_EN.pdf");
     //about me translate
     aboutMeTitle.textContent = "About me";
